@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+<!-- 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> -->
+    <!-- </script> -->
+
+    <!-- <script>
+        /* Add "https://api.ipify.org?format=json" statement
+			this will communicate with the ipify servers in
+			order to retrieve the IP address $.getJSON will
+			load JSON-encoded data from the server using a
+			GET HTTP request */
+
+        $.getJSON("https://api.ipify.org?format=json", function (data) {
+
+            // Setting text of element P with id gfg
+            $("#gfg").html(data.ip);
+        })
+    </script> -->
+
+    
+</head>
+
+<body>
+    <div class="parent2">
+        <div class="di1">
+        <table>
+            <tr>
+                <td>IP Address:<span id="gfg"></span></td>
+
+            </tr>
+            <tr>
+                <td id="demo">Lat: <span id="lat"></span></td>
+                <td>City: <span id="city"></span></td>
+            </tr>
+            <tr>
+               
+
+                <!-- <td>Long: <span id="long"></span></td> -->
+                <td>Region: <span id="region"></span></td>
+            </tr>
+            <tr>
+                <td>Organisation: <span id="organisation"></span></td>
+                <td>Hostname: <span id="hostname"></span></td>
+            </tr>
+        </table>
+
+
+
+    </div>
+    <div class="di2">
+        <h1 class="location" >Your Current Location</h1>
+       
+        <iframe id="mapFrame" width="1500" height="270" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </div>
+
+
+
+
+    <div class="di3">
+        <h1 class="block2">More Information About You</h1>
+        <table>
+            <tr>
+   
+                <td>TimeZone: <span id="timezone"></span></td><br>
+                <td>Date And Time: <span id="datentime"></span></td><br>
+
+                <td>Pincode: <span id="pincode"></span></td><br>
+                <td>Message: <span id="message"></span></td><br>
+
+            </tr>
+        </table>
+    </div>
+
+
+
+
+    <div class="di4">
+        <h1 class="block2">Post Offices Near You</h1>
+     <img src="Group 9.svg" alt="" class="search">
+    </div>
+    <div class="di5">
+        <div class="parent">
+            <div class="dv1"> <img src="Group 1.svg" alt="" class="grp1"></div>
+            <div class="dv2"> <img src="Group 1.svg" alt="" class="grp1"></div>
+            <div class="dv3"> <img src="Group 1.svg" alt="" class="grp1"></div>
+            <div class="dv4"> <img src="Group 1.svg" alt="" class="grp1"></div>
+            <div class="dv5"> <img src="Group 1.svg" alt="" class="grp1"></div>
+            <div class="dv6"> <img src="Group 1.svg" alt="" class="grp1"></div>
+            <div class="dv7"> <img src="Group 1.svg" alt="" class="grp1"></div>
+            <div class="dv8"> <img src="Group 1.svg" alt="" class="grp1"></div>
+            <div class="dv9"> <img src="Group 1.svg" alt="" class="grp1"></div>
+            <div class="dv10"> <img src="Group 1.svg" alt="" class="grp1"></div>
+            </div>
+
+
+
+
+
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

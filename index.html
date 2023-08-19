@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find Nearest Post Offices: Location-Based Information Extraction Application">
+    <title>Find Nearest Post Offices</title>
+    <!-- Add your CSS stylesheets and other meta tags here -->
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function getLocation() {
+            var x = document.getElementById("demo");
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else {
+                x.innerHTML = "Geolocation is not supported by this browser.";
+            }
+        }
+
+        function showPosition(position) {
+            var x = document.getElementById("demo");
+            x.innerHTML = "Lat: " + position.coords.latitude +
+                "<br>Long: " + position.coords.longitude;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="div1">
+            <h1 class="h">Post Office Application.</h1>
+            <h2>This Application Allows you to extract information about<br>the nearest Post Offices, based on your
+                location.</h2>
+            <img src="undraw_messenger_re_8bky 1.svg" alt="image" class="img">
+        </div>
+        <div class="div2">
+            <div class="b">
+                <h1>Your Current IP Address is <span class="ipwala" id="ipaddy2"></span></h1>
+                <button onclick="getLocation()" type="button" class="btn"><a href="second.html"
+                        target="_blank" class="get">Get Started</a></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
